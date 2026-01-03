@@ -1,0 +1,622 @@
+body {
+    background-color: #ede6dd;
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body h1, body h2, body h3 {
+        font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    position: absolute;
+    top:1px;
+    width: 100%;
+    left: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+
+
+#menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+    gap: 50px;
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color: #583022;
+}
+
+#menuLinks {
+    margin-left: auto;
+}
+
+#smallMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#headerImg img {
+    width: 100%;
+}
+
+#headerDiv img {
+    display: block;
+    width: 100%;
+}
+
+#headerDiv {
+    position: relative;
+}
+
+#pageTitle {
+    text-align: center;
+  font-size: 150%;
+  color: #583022;
+}
+
+#pageTitleStart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageTitleStart h1 {
+        text-align: center;
+  font-size: 250%;
+  color: #583022;
+    font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  border-right: 2px solid #583022;
+    border-left: 2px solid #583022;
+    padding: 10px;
+    width: 40%;
+    margin-top: 50px;
+}
+
+
+
+
+#pageTitle h1 {
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  border-bottom: 2px solid #583022;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+#menu img {
+    width: 150px;
+    height: auto;
+    opacity: 1;
+    margin-left: 50px;
+}
+
+#aboutDiv img{
+    width: 300px;
+    opacity: 1;
+        box-shadow: 5px 5px 0px #e9d0a3;
+}
+
+#aboutImg {
+    padding: 20px;
+    margin: 20px;
+    border-right: 2px solid #e9d0a3;
+    padding-right: 50px;
+
+}
+
+#aboutDiv {
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+}
+
+#aboutText {
+    text-align: left;
+    margin: 50px;
+    width: 100%;
+    font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  box-shadow: 5px 5px 0px #e9d0a3;
+  text-align: center;
+}
+
+#aboutText h2 {
+    border-bottom: 2px solid #e9d0a3;
+      font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 150%;
+    text-align: center;
+}
+
+
+
+.oneProduct img {
+    width: 200px !important;
+    box-shadow: 5px 5px 0px #e9d0a3;
+}
+
+.oneProduct p {
+    text-align: center;
+    margin-top: 5px;
+    color: #e9d0a3;
+}
+
+#productList {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+#productsDiv {
+    background-color: #583022;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+#productsDiv h2 {
+    text-align: center;
+      font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #e9d0a3;
+  font-size: 190%;
+  margin-bottom: 40px;
+}
+
+#productsDiv a {
+    color: #e9d0a3;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #e9d0a3;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+}
+
+#productsDiv a:hover {
+    color: #583022;
+    background-color: #e9d0a3;
+    border: 2px solid #452519;
+}
+
+#questions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    color: #583022;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+#faq {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+        margin-top: 50px;
+        background-color: #e9d0a3;
+        padding-bottom: 50px;
+        padding-top: 20px;
+}
+
+#faq h2 {
+    text-align: center;
+    color: #583022;
+          font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 190%;
+}
+
+.oneQuestion {
+    text-align: center;
+}
+
+footer {
+    background-color: #794839;
+    padding: 5px;
+    text-align: center;
+}
+
+#news img {
+    width: 150px;
+    padding-right: 20px;
+    margin: 10px;
+    border-right: 2px solid #452519;
+}
+
+#news h2{
+    text-align: center;
+              font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #583022;
+  font-size: 190%;
+}
+
+.newsArticle {
+display: flex;
+width: 600px;
+justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 0px #583022;
+
+margin: 0 auto;
+margin-bottom: 40px;
+}
+
+.newsText {
+    width: 100%;
+}
+
+.newsText h3 {
+              font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #583022;
+  font-size: 160%;
+}
+
+#news a {
+        color: #583022;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #583022;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#news a:hover {
+    background-color: #583022;
+    color: #ede6dd;
+}
+
+/*Design för sidan "Kontakta mig"*/
+
+/*Kontaktformulär*/
+#contactInfo {
+    background-color: #e9d0a3;
+    border-radius: 20px;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#contactInfo h2 {
+    font-size: 190%;
+}
+
+form input, form textarea {
+    padding: 10px;
+    
+    border: none;
+    width: 100%;
+    background-color: #ede6dd;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-bottom: 2px solid #583022;
+}
+
+form textarea {
+    height: 70px;
+}
+
+
+
+#contactForm {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 50px;
+}
+
+form input[type=submit] {
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+        color: #583022;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #583022;
+    border-radius: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+form input[type=submit]:hover {
+        background-color: #583022;
+    color: #ede6dd;
+    cursor: pointer;
+}
+
+#contactForm h2 {
+    font-size: 190%;
+}
+
+/*Design för sidan "Nyheter"*/
+
+.lowerNews {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lowerNews p {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+
+#newsPage img {
+    width: 150px;
+    padding-right: 20px;
+    margin: 10px;
+    border-right: 2px solid #452519;
+}
+
+#newsPage h2{
+    text-align: center;
+              font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #583022;
+  font-size: 190%;
+}
+
+.newsPageArticle {
+display: flex;
+width: 600px;
+justify-content: center;
+align-items: center;
+box-shadow: 5px 5px 0px #583022;
+
+margin: 0 auto;
+margin-bottom: 40px;
+}
+
+.newsPageText {
+    width: 100%;
+}
+
+.newsPageText h3 {
+              font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #583022;
+  font-size: 160%;
+}
+
+#newsPage a {
+        color: #583022;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid #583022;
+    border-radius: 30px;
+    display: block;
+    width: 120px;
+    text-align: center;
+}
+
+#newsPage a:hover {
+    background-color: #583022;
+    color: #ede6dd;
+}
+
+
+
+
+/*Design för sidan "Produkter"*/
+#productList img {
+    width: 200px;
+    margin: 20px;
+        box-shadow: 5px 5px 0px #e9d0a3;
+
+}
+
+#productList {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+}
+
+.onePoster p {
+    margin: 5px;
+    color: #e9d0a3;
+}
+
+.onePoster button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #583022;
+    background-color: #e9d0a3;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.posterText {
+    padding: 20px;
+    margin-top: -35px;
+    text-align: center;
+}
+
+.onePoster {
+    background-color: #583022;
+    margin: 15px;
+    padding: 20px;
+}
+
+/*Design av sidan för en produkt*/
+.theProduct {
+    display: block;
+    margin: 0 auto;
+}
+
+.productInfo {
+    display: flex;
+    justify-content: center;
+
+}
+
+.theProduct img {
+    width: 150px;
+    padding: 20px;
+
+}
+
+.theProduct button {
+        padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #583022;
+    background-color: #ede6dd;
+    border-radius: 20px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #583022;
+}
+
+.theProduct button:hover {
+    cursor: pointer;
+    background-color: #e9d0a3;
+}
+
+.productDescription {
+    margin: 40px;
+    background-color: #e9d0a3;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/*Design för enskild nyhet*/
+.theNews img {
+    width: 200px;
+    margin: 20px;
+    box-shadow: 5px 5px 0px #e9d0a3;
+}
+
+.theNews {
+    display: flex;
+    box-shadow: 5px 5px 0px #583022;
+    margin: 30px;
+}
+
+.theNews p {
+    padding: 20px;
+}
+
+.newsDate {
+    color: #704433;
+}
+
+/*Design för en enkel sida*/
+
+#post {
+    background-color: #e9d0a3;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+}
+
+/*Design för menysymbol*/
+#mobileMenu {
+    display: none;
+}
+
+#menuLinks {
+    display: block;
+}
+
+/*Anpassningar till olika skärmstorlekar*/
+
+@media (min-width: 851px) {
+    #menuLinks {
+        display: block !important;
+    }
+}
+
+@media (max-width: 850px) {
+    #mobileMenu {
+        display: block;
+
+    }
+
+    #menuIcon {
+        vertical-align: middle;
+    
+    }
+
+    #menu {
+        flex-direction: column;
+        text-align: right;
+
+    }
+
+    #menu button {
+        background-color: #ede6dd;
+        border: 2px solid #583022;
+        padding: 10px;
+        border-radius: 10px;
+        color: #583022;
+        margin-right: 15px;
+    }
+
+    #menu button:hover {
+        cursor: pointer;
+        background-color: #583022;
+        color: #ede6dd;
+    }
+
+        #menu ul{
+        flex-direction: column;
+        background-color: #e9d0a3;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #menuLinks {
+                display: none;
+                margin-top: -25px;
+                width: 50%;
+                margin-right: -20px;
+                
+    }
+}
