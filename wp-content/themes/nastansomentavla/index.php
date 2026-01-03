@@ -97,11 +97,4 @@
     </div>
 
 
-
-    <footer>
-        <p>NSET <br> est 2022</p>
-    </footer>
-
-    <script src="/js/main.js"></script>
-</body>
-</html>
+<?php get_footer(); ?>
