@@ -96,27 +96,32 @@
 
     <div id="news">
         <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'newsHeading', true)); ?></h2>
+        
+                <?php query_posts('category_name=nyheter&posts_per_page=2&orderby=date&order=DESC');
+        if(have_posts()) {
+            while (have_posts()) {
+                the_post();
+                ?>
         <div class="newsArticle">
             
-            <img src="images/profilbild.jpg">
+            <?php the_post_thumbnail('news-image'); ?>
             <div class="newsText">
-            <h3>Nyhet</h3>
-            <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-            <p>Datum</p>
+            <h3><?php the_title(); ?></h3>
+            <p><?php the_excerpt(); ?></p>
+            <p><?= get_the_date(); ?></p>
         </div>
         </div>
 
-                <div class="newsArticle">
-            
-            <img src="images/profilbild.jpg">
-            <div class="newsText">
-            <h3>Nyhet</h3>
-            <p>text text text text text text text text text text text text text text text text text text text text text text text text text text text text </p>
-            <p>Datum</p>
-        </div>
-        </div>
+        <?php
+            }
+        }
 
- <a href="/products.html">Läs alla nyheter</a>
+        wp_reset_query();
+        ?>
+
+
+
+ <a href="<?php echo get_permalink(get_page_by_path('nyheter')); ?>">Läs fler nyheter</a>
 
     </div>
 
