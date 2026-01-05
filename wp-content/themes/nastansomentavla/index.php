@@ -6,7 +6,7 @@
     </div>
 
         <div id="newsPage">
-        <h2>-Senaste nyheter och uppdateringar-</h2>
+        <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true) ); ?></h2>
        
 
         <?php query_posts('category_name=nyheter');
