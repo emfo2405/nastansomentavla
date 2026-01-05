@@ -176,7 +176,7 @@ body h1, body h2, body h3 {
 }
 
 #productList {
-        display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;

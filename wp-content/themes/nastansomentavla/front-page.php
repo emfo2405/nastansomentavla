@@ -59,8 +59,10 @@
 
     <?php
         }
+   
     }
 
+    wp_reset_query();
     ?>
 
 
@@ -70,24 +72,25 @@
 
     <div id="faq">
         <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'faqHeading', true)); ?></h2>
-        <div id="questions">
+    <div id="questions">
+        <?php query_posts('category_name=faq');
+        if(have_posts()) {
+            while (have_posts()) {
+                the_post();
+                ?>
+
             <div class="oneQuestion">
-                <h3>Fråga</h3>
-                <p>Svar svar svar svar svar svar svar svar svar svar svar svar svar</p>
+                <h3><?php the_title() ?></h3>
+                <p><?php the_content() ?></p>
             </div>
-            <div class="oneQuestion">
-                <h3>Fråga</h3>
-                <p>Svar svar svar svar svar svar svar svar svar svar svar svar svar</p>
-            </div>
-            <div class="oneQuestion">
-                <h3>Fråga</h3>
-                <p>Svar svar svar svar svar svar svar svar svar svar svar svar svar</p>
-            </div>
-            <div class="oneQuestion">
-                <h3>Fråga</h3>
-                <p>Svar svar svar svar svar svar svar svar svar svar svar svar svar</p>
-            </div>
-            
+
+                <?php
+            }
+        }
+
+        wp_reset_query();
+        ?>
+        
         </div>
     </div>
 
