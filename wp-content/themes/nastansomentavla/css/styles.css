@@ -155,21 +155,29 @@ body h1, body h2, body h3 {
     text-align: center;
 }
 
-
+.oneProduct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .oneProduct img {
     width: 200px !important;
     box-shadow: 5px 5px 0px #e9d0a3;
+    margin: 0 auto;
 }
 
 .oneProduct p {
     text-align: center;
     margin-top: 5px;
     color: #e9d0a3;
+    margin: 0 auto;
 }
 
 #productList {
-    display: flex;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     justify-content: center;
 

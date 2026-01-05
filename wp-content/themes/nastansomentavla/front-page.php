@@ -29,9 +29,7 @@
             <div class="oneProduct">
 
                 <?php
-                if(has_post_thumbnail()) {
-                    the_post_thumbnail();
-                }
+                    the_post_thumbnail('product-image');
                 ?>
                 <p><?php the_title(); ?></p>
             </div>
@@ -39,20 +37,33 @@
         </div>
         <?php endif; wp_reset_postdata(); ?>
 
-        <a href="/products.html">Visa alla produkter</a>
+        <a href="<?php echo get_permalink(get_page_by_path('produkter')); ?>">Visa alla produkter</a>
     </div>
 
+    <?php query_posts('category_name=ommig');
+    if (have_posts()) {
+        while (have_posts()) {
+            the_post();
+    ?>
 
     <div id="aboutDiv">
         <div id="aboutImg">
-            <img src="/images/profilbild.jpg" alt="Foto av Emma Forsmalm sittades med en kopp i händerna">
+            <?php the_post_thumbnail('about-image'); ?>
         </div>
         
         <div id="aboutText">
-            <h2>-Om konstnären bakom motiven-</h2>
-            <p>text text text text text text </p>
+            <h2><?php the_title(); ?></h2>
+            <p><?php the_content(); ?></p>
         </div>
     </div>
+
+    <?php
+        }
+    }
+
+    ?>
+
+
 
     
 
