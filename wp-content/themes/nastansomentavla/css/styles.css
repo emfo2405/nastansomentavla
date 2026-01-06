@@ -452,6 +452,7 @@ margin-bottom: 40px;
 /*Design för sidan "Produkter"*/
 #productList img {
     width: 200px;
+    height: 200px;
     margin: 20px;
         box-shadow: 5px 5px 0px #e9d0a3;
 
@@ -467,7 +468,7 @@ margin-bottom: 40px;
     color: #e9d0a3;
 }
 
-.onePoster button {
+.onePoster .buyButton {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
