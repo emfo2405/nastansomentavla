@@ -1,8 +1,6 @@
 
 <?php 
-/*
-Template Name: Nyhetssida
-*/
+
 get_header(); 
 
 $page_id = get_the_ID();
