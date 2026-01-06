@@ -577,6 +577,18 @@ margin-bottom: 40px;
     display: block;
 }
 
+/*Design av notis*/
+.notis {
+    background-color: #e9d0a3;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /*Anpassningar till olika skärmstorlekar*/
 
 @media (min-width: 851px) {

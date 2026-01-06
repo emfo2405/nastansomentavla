@@ -19,3 +19,17 @@ add_image_size('news-image', 200, 200, array('center', 'center'));
 add_image_size('news-image-single', 1000, 200, array('center', 'center'));
 add_image_size('product-image', 200, 300, array('center', 'center'));
 add_image_size('about-image', 500, 500, array('center', 'center'));
+
+//Funktion för att visa notis på startsidan
+add_action('widget_init', 'nastansomentavla_widget_init');
+
+function nastansomentavla_widget_init() {
+    register_sidebar(array(
+        'name' => 'Notis på startsidan',
+        'id'   => 'notis',
+        'before_widget' => '<div>',
+        'after_widget' => '</div>',
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
+    ));
+}

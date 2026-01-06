@@ -5,6 +5,12 @@
     </div>
     </div>
 
+    <div class="notis">
+        <h2>Notis</h2>
+        <p>Det här är en notis!</p>
+
+    </div>
+
 
         <div id="productsDiv">
         <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'productsHeading', true)); ?></h2>
