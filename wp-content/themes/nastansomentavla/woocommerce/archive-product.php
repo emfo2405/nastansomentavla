@@ -23,12 +23,16 @@ $page_id = get_the_ID();
             $product = wc_get_product(get_the_ID());
             ?>
         <div class="onePoster">
-            <?php the_post_thumbnail(); ?>
+            <a href='<?php the_permalink(); ?>'><?php the_post_thumbnail(); ?></a>
             <div class="posterText">
             <p><?php the_title(); ?></p>
             <p><?php echo $product ? $product -> get_price_html() : ''; ?></p>
             </div>
-            <a href="<?php echo esc_url($product -> add_to_cart_url());?>" class="buyButton">Köp</a>
+
+            <div class="cartBtn">
+                <?php woocommerce_template_loop_add_to_cart(); ?>
+            </div>
+           
         </div>
 
         <?php

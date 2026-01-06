@@ -25,18 +25,18 @@ get_header();
         <?php the_post_thumbnail(); ?>
         <div class="theProductText">
         <h3><?php echo $product -> get_price_html(); ?></h3>
+                               <div class="addToCart">
+        <?php woocommerce_template_loop_add_to_cart(); ?>
+</div>
+    </div>
+
         </div>
-        </div>
+
         <div class="productDescription">
         <p><?php the_content(); ?></p>    
         </div>
  
-        <div class="addToCart">
-        <form class="cart"  method="post" enctype="multipart/form-data">
-            <input type="hidden" name="add-to-cart" value="<?php echo $product->get_id(); ?>" />
-       <button type="submit" class="single_add_to_cart_button button alt" >Köp</button>
-       </form>
-</div>
+
     </div>
 
         <?php

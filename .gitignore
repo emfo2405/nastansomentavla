@@ -3,6 +3,7 @@
 /wp-content/uploads
 /wp-content/plugins/
 /wp-content/cache
+/wp-content/languages
 wp-config.php
 .DS_Store
 Thumbs.db

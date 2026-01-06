@@ -468,7 +468,7 @@ margin-bottom: 40px;
     color: #e9d0a3;
 }
 
-.onePoster .buyButton {
+.onePoster .cartBtn a {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -511,7 +511,7 @@ margin-bottom: 40px;
 
 }
 
-.theProduct button {
+.theProduct a {
         padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -522,9 +522,11 @@ margin-bottom: 40px;
     display: block;
     margin: 0 auto;
     border: 2px solid #583022;
+    margin-top: 5px;
+    width: 80%;
 }
 
-.theProduct button:hover {
+.theProduct a:hover {
     cursor: pointer;
     background-color: #e9d0a3;
 }
