@@ -5,11 +5,14 @@
     </div>
     </div>
 
-    <div class="notis">
-        <h2>Notis</h2>
-        <p>Det här är en notis!</p>
+  <?php
+  if(is_active_sidebar('notis')) : ?>
+  <div id="notis">
+    <?php dynamic_sidebar('notis'); ?>
+  </div>
+  <?php endif; ?>
 
-    </div>
+
 
 
         <div id="productsDiv">

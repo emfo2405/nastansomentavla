@@ -578,7 +578,7 @@ margin-bottom: 40px;
 }
 
 /*Design av notis*/
-.notis {
+#notis {
     background-color: #e9d0a3;
     margin: 0 auto;
     width: 500px;
@@ -587,6 +587,7 @@ margin-bottom: 40px;
     padding-bottom: 3px;
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
 }
 
 /*Anpassningar till olika skärmstorlekar*/

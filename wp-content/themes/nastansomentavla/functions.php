@@ -21,7 +21,7 @@ add_image_size('product-image', 200, 300, array('center', 'center'));
 add_image_size('about-image', 500, 500, array('center', 'center'));
 
 //Funktion för att visa notis på startsidan
-add_action('widget_init', 'nastansomentavla_widget_init');
+add_action('widgets_init', 'nastansomentavla_widget_init');
 
 function nastansomentavla_widget_init() {
     register_sidebar(array(
