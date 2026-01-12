@@ -1,5 +1,6 @@
 <?php
 
+//Registrerar huvudmeny
 add_action('init', 'register_my_menus');
 
 function register_my_menus() {
@@ -8,6 +9,7 @@ function register_my_menus() {
     ));
     }
 
+//Laddar in stöd för WooCommerce
 function mytheme_add_woocommerce_support() {
     add_theme_support('woocommerce');
 }
@@ -33,3 +35,18 @@ function nastansomentavla_widget_init() {
         'after_title' => '</h2>'
     ));
 }
+
+//Laddar in CSS- och JavaScript-fil
+function tema_enqueue_files() {
+    wp_enqueue_style('main-style', get_stylesheet_uri());
+    wp_enqueue_style('custom-style', get_template_directory_uri() . '/css/styles.css');
+
+    wp_enqueue_script(
+        'custom-js',
+        get_template_directory_uri() . '/js/main.js',
+        array(),
+        false,
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'tema_enqueue_files');
