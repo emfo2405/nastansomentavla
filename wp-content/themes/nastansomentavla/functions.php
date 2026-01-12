@@ -15,6 +15,10 @@ function mytheme_add_woocommerce_support() {
 }
 add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
 
+//Aktiverar utvald bild
+add_theme_support('post-thumbnails');
+
+//Sätter storlek på bilder
 add_image_size('header', 3999, 2184, array('center', 'center'));
 add_image_size('small-header', 3999, 1156, array('center', 'center'));
 add_image_size('news-image', 200, 200, array('center', 'center'));
@@ -64,5 +68,16 @@ function tema_enqueue_files() {
     );
 }
 add_action('wp_enqueue_scripts', 'tema_enqueue_files');
+
+//Lägger till stöd för att visa ett utdrag
+add_post_type_support('page', 'excerpt');
+
+//Lägger till stöd för templates, HTML5, block-editor
+function tema_theme_support(): void {
+    add_theme_support('title-tag');
+    add_theme_support('html5', array('search-form', 'comment-form', 'gallery'));
+    add_theme_support('editor-styles');
+}
+add_action('after_setup_theme', 'tema_theme_support');
 
 
