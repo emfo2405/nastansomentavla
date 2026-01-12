@@ -8,6 +8,8 @@ get_header(); ?>
     <h1><?php the_title(); ?></h1>
 </div>
 
+<div class="sidebarPageContent">
+    <div class="sidebarPageText">
 <?php
     if(have_posts()) {
         while(have_posts()) {
@@ -25,6 +27,7 @@ get_header(); ?>
 
     wp_reset_query();
     ?>
+    </div>
 
     <aside class="sidebar">
         <?php if(is_active_sidebar('main-sidebar')): ?>
@@ -33,6 +36,7 @@ get_header(); ?>
             <p>Lägg till några widgets i din sidebar</p>
         <?php endif; ?>
     </aside>
+        </div>
         </div>
 
 <?php get_footer(); ?>

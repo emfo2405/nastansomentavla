@@ -590,6 +590,27 @@ margin-bottom: 40px;
     text-align: center;
 }
 
+/*Design av sida med sidebar*/
+.sidebarPageContent {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebarPageText {
+    width: 60%;
+    margin: 20px;
+}
+
+.sidebar {
+    background-color: #583022;
+    color: #ede6dd;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+
 /*Anpassningar till olika skärmstorlekar*/
 
 @media (min-width: 851px) {
