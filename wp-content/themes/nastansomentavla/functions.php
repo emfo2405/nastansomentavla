@@ -1,13 +1,17 @@
 <?php
 
-//Registrerar huvudmeny
+//Registrerar menyer
 add_action('init', 'register_my_menus');
 
+//Huvudmeny och footermeny
 function register_my_menus() {
     register_nav_menus(array(
-        'main-nav' => 'Huvudmeny'
+        'main-nav' => 'Huvudmeny',
+        'footer-nav' => 'Footermeny'
     ));
     }
+
+
 
 //Laddar in stöd för WooCommerce
 function mytheme_add_woocommerce_support() {

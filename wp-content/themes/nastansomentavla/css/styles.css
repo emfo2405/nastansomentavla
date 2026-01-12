@@ -251,9 +251,50 @@ body h1, body h2, body h3 {
 }
 
 footer {
-    background-color: #794839;
+    background-color: #e9d0a3;
     padding: 5px;
+}
+
+#footerMenu {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul{
+    
+    list-style-type: none;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #452519;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 2px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+footer img {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer p {
+    text-align: center;
+    color: #5e4c2a;
+}
+
+#footerMenuLinks {
+    text-align: left;
+    border-left: 2px solid #452519;
+    margin: 10px;
 }
 
 #news img {
