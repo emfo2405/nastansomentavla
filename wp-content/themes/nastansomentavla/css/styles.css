@@ -56,11 +56,13 @@ body h1, body h2, body h3 {
 
 #headerImg img {
     width: 100%;
+    height: auto;
 }
 
 #headerDiv img {
     display: block;
     width: 100%;
+    height: auto;
 }
 
 #headerDiv {
@@ -116,8 +118,9 @@ body h1, body h2, body h3 {
 
 #aboutDiv img{
     width: 300px;
+    height: auto;
     opacity: 1;
-        box-shadow: 5px 5px 0px #e9d0a3;
+    box-shadow: 5px 5px 0px #e9d0a3;
 }
 
 #aboutImg {
@@ -164,6 +167,7 @@ body h1, body h2, body h3 {
 
 .oneProduct img {
     width: 200px !important;
+    height: auto;
     box-shadow: 5px 5px 0px #e9d0a3;
     margin: 0 auto;
 }
@@ -282,6 +286,7 @@ footer nav a:hover {
 
 footer img {
     width: 100px;
+    height: auto;
     padding: 10px;
     margin: 10px;
 }
@@ -299,6 +304,7 @@ footer p {
 
 #news img {
     width: 150px;
+    height: auto;
     padding-right: 20px;
     margin: 10px;
     border-right: 2px solid #452519;
@@ -434,6 +440,7 @@ form input[type=submit]:hover {
 
 #newsPage img {
     width: 150px;
+    height: auto;
     padding-right: 20px;
     margin: 10px;
     border-right: 2px solid #452519;
@@ -582,6 +589,7 @@ margin-bottom: 40px;
 /*Design för enskild nyhet*/
 .theNews img {
     width: 200px;
+    height: auto;
     margin: 20px;
     box-shadow: 5px 5px 0px #e9d0a3;
 }
