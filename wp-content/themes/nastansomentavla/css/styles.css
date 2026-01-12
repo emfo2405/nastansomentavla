@@ -163,12 +163,14 @@ body h1, body h2, body h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .oneProduct img {
-    width: 200px !important;
-    height: auto;
+    width: 250px !important;
+    height: 350px !important;
     box-shadow: 5px 5px 0px #e9d0a3;
+    display: block;
     margin: 0 auto;
 }
 
@@ -183,13 +185,15 @@ body h1, body h2, body h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    max-width: 700px;
     justify-content: center;
-
+    align-items: center;
+    margin: 0 auto;
 }
 
 #productsDiv {
     background-color: #583022;
-    padding: 30px;
+    padding: 20px;
     margin-top: 50px;
 }
 
@@ -213,6 +217,8 @@ body h1, body h2, body h3 {
     margin: 0 auto;
     width: 150px;
     text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 #productsDiv a:hover {
@@ -633,13 +639,14 @@ margin-bottom: 40px;
 #notis {
     background-color: #e9d0a3;
     margin: 0 auto;
-    width: 500px;
+    width: 600px;
     border-radius: 20px;
     padding-top: 3px;
     padding-bottom: 3px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;
+    margin-top: 20px;
 }
 
 /*Design av sida med sidebar*/

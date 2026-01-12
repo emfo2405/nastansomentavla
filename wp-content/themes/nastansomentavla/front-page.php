@@ -1,16 +1,18 @@
   <?php get_header(); ?>
 
-    <div id="pageTitleStart">
-        <h1><?php bloginfo('name'); ?><br><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true)); ?></h1>
-    </div>
-    </div>
-
   <?php
   if(is_active_sidebar('notis')) : ?>
   <div id="notis">
     <?php dynamic_sidebar('notis'); ?>
   </div>
   <?php endif; ?>
+
+    <div id="pageTitleStart">
+        <h1><?php bloginfo('name'); ?><br><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true)); ?></h1>
+    </div>
+    </div>
+
+
 
 
 
