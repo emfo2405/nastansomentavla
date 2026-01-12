@@ -24,6 +24,7 @@ get_header();
         <div class="productInfo">
         <?php the_post_thumbnail(); ?>
         <div class="theProductText">
+        <h2><?php the_title(); ?></h2>
         <h3><?php echo $product -> get_price_html(); ?></h3>
 <div class="addToCart">
         <?php woocommerce_template_loop_add_to_cart(); ?>

@@ -11,6 +11,8 @@ body h1, body h2, body h3 {
   font-style: normal;
 }
 
+
+
 #menu {
     display: flex;
     align-items: center;
@@ -573,8 +575,10 @@ font-family: "Shadows Into Light", cursive;
 }
 
 
+
+
 /*Design av sidan för en produkt*/
-.theProduct {
+.productInfo h2, .productInfo h3 {
     display: block;
     margin: 0 auto;
 }
@@ -585,12 +589,30 @@ font-family: "Shadows Into Light", cursive;
 
 }
 
-.theProduct img {
-    width: 150px;
-    height: 150px;
-    padding: 20px;
-
+.addToCart {
+    margin-top: 40px;
 }
+
+.theProduct img {
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+}
+
+.theProductText {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.theProductText h2, .theProductText h3 {
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 10px;
+}
+
 
 .theProduct a {
         padding: 10px;
@@ -605,6 +627,7 @@ font-family: "Shadows Into Light", cursive;
     border: 2px solid #583022;
     margin-top: 5px;
     width: 80%;
+    text-decoration: none;
 }
 
 .theProduct a:hover {
@@ -617,6 +640,10 @@ font-family: "Shadows Into Light", cursive;
     background-color: #e9d0a3;
     border-radius: 20px;
     padding: 20px;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 /*Design för enskild nyhet*/
