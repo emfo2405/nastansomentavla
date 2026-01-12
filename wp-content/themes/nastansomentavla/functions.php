@@ -36,6 +36,20 @@ function nastansomentavla_widget_init() {
     ));
 }
 
+//Aktivera stöd för en sidebar
+function tema_register_sidebars(): void {
+    register_sidebar(array(
+        'name' => 'main-sidebar',
+        'id' => 'main-sidebar',
+        'description' => 'Sidebar som kan användas med temasidan page-sidebar',
+        'before_widget' => '<div class="sidebar">',
+        'after_widget' => '</div>',
+        'before_title' => '<h2 class="sidebarTitle">',
+        'after_title' => '</h3>',
+    ));
+}
+add_action('widgets_init', 'tema_register_sidebars');
+
 //Laddar in CSS- och JavaScript-fil
 function tema_enqueue_files() {
     wp_enqueue_style('main-style', get_stylesheet_uri());
@@ -50,3 +64,5 @@ function tema_enqueue_files() {
     );
 }
 add_action('wp_enqueue_scripts', 'tema_enqueue_files');
+
+
