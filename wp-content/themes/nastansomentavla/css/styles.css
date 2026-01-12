@@ -147,6 +147,7 @@ body h1, body h2, body h3 {
   font-style: normal;
   box-shadow: 5px 5px 0px #e9d0a3;
   text-align: center;
+  padding: 25px;
 }
 
 #aboutText h2 {
@@ -485,7 +486,7 @@ margin-bottom: 40px;
 }
 
 #newsPage a {
-        color: #583022;
+    color: #583022;
     text-decoration: none;
     padding: 5px;
     border: 2px solid #583022;
@@ -504,17 +505,25 @@ margin-bottom: 40px;
 
 
 /*Design för sidan "Produkter"*/
-#productList img {
-    width: 200px;
-    height: 200px;
-    margin: 20px;
-        box-shadow: 5px 5px 0px #e9d0a3;
+#productListImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
 
+
+#productsPage img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    box-shadow: 5px 5px 0px #e9d0a3;
 }
 
 #productList {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .onePoster p {
@@ -522,7 +531,7 @@ margin-bottom: 40px;
     color: #e9d0a3;
 }
 
-.onePoster .cartBtn a {
+.cartBtn a {
     padding: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -532,11 +541,14 @@ margin-bottom: 40px;
     border: none;
     display: block;
     margin: 0 auto;
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    margin-bottom: 10px;
 }
 
 .posterText {
     padding: 20px;
-    margin-top: -35px;
     text-align: center;
 }
 
@@ -545,6 +557,21 @@ margin-bottom: 40px;
     margin: 15px;
     padding: 20px;
 }
+
+#productsPage a:hover {
+    background-color: #583022;
+    color: #ede6dd;
+}
+
+#productsPage h2{
+    text-align: center;
+font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #583022;
+  font-size: 190%;
+}
+
 
 /*Design av sidan för en produkt*/
 .theProduct {
@@ -642,7 +669,7 @@ margin-bottom: 40px;
     width: 600px;
     border-radius: 20px;
     padding-top: 3px;
-    padding-bottom: 3px;
+    padding-bottom: 15px;
     padding-left: 15px;
     padding-right: 15px;
     text-align: center;

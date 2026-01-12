@@ -10,7 +10,7 @@ $page_id = get_the_ID();
     <h1><?php echo get_the_title($page_id); ?></h1>
 </div>
 
-<div id="newsPage">
+<div id="productsPage">
     <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true)); ?></h2>
 
 
@@ -23,7 +23,9 @@ $page_id = get_the_ID();
             $product = wc_get_product(get_the_ID());
             ?>
         <div class="onePoster">
+            <div class="productListImg">
             <a href='<?php the_permalink(); ?>'><?php the_post_thumbnail(); ?></a>
+            </div>
             <div class="posterText">
             <p><?php the_title(); ?></p>
             <p><?php echo $product ? $product -> get_price_html() : ''; ?></p>
