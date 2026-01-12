@@ -643,7 +643,7 @@ font-family: "Shadows Into Light", cursive;
 
 /*Design för en enkel sida*/
 
-#post {
+#post, #cartPost, #checkoutPost {
     background-color: #e9d0a3;
     border-radius: 20px;
     padding: 30px;
@@ -651,6 +651,40 @@ font-family: "Shadows Into Light", cursive;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+#post a, #cartPost a, #checkoutPost a{
+    text-decoration: none;
+    color: #452519;
+}
+
+#post a:hover, #cartPost a:hover, #checkoutPost a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+#post button,  #checkoutPost button {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #583022;
+    background-color: #ede6dd;
+    border-radius: 20px;
+    border: none;
+    border: 2px solid #583022;
+    margin-top: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+#post button:hover,  #checkoutPost button:hover {
+    background-color: #e9d0a3;
+}
+
+#checkoutPost h2, #checkoutPost h3 {
+          font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*Design för menysymbol*/
@@ -694,6 +728,10 @@ font-family: "Shadows Into Light", cursive;
     border-radius: 20px;
     padding: 10px;
 }
+
+
+
+
 
 
 
