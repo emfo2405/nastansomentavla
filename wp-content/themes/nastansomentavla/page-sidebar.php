@@ -16,7 +16,7 @@ get_header(); ?>
             the_post();
             ?>
 
-        <div id="post">
+        <div>
         <h2><?php the_title(); ?></h2>
         <p><?php the_content();?> </p>
     </div>
