@@ -37,6 +37,6 @@ get_header(); ?>
         <?php endif; ?>
     </aside>
         </div>
-        </div>
+        
 
 <?php get_footer(); ?>

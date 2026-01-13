@@ -9,7 +9,6 @@ get_header(); ?>
 <div id="pageTitle">
     <h1><?php the_title(); ?></h1>
 </div>
-</div>
 
 <div id="newsPage">
     <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true)); ?></h2>

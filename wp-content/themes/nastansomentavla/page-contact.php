@@ -7,7 +7,7 @@ get_header(); ?>
     <div id="pageTitle">
         <h1><?php the_title(); ?></h1>
     </div>
-</div>
+
 
     <?php query_posts('category_name=kontaktinformation');
     if(have_posts()) {

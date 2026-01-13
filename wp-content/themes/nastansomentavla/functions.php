@@ -24,11 +24,10 @@ add_theme_support('post-thumbnails');
 
 //Sätter storlek på bilder
 add_image_size('header', 3999, 2184, array('center', 'center'));
-add_image_size('small-header', 3999, 1156, array('center', 'center'));
 add_image_size('news-image', 200, 200, array('center', 'center'));
-add_image_size('news-image-single', 1000, 200, array('center', 'center'));
+add_image_size('news-image-single', 300, 300, array('center', 'center'));
 add_image_size('product-image', 300, 400, array('center', 'center'));
-add_image_size('about-image', 500, 500, array('center', 'center'));
+add_image_size('about-image', 250, 400, array('center', 'center'));
 
 //Funktion för att visa notis på startsidan
 add_action('widgets_init', 'nastansomentavla_widget_init');

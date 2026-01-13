@@ -10,7 +10,7 @@
     <div id="pageTitleStart">
         <h1><?php bloginfo('name'); ?><br><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true)); ?></h1>
     </div>
-    </div>
+    
 
 
 
