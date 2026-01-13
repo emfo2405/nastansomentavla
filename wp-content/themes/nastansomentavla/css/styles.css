@@ -461,7 +461,7 @@ form textarea {
 
 #contactForm {
     margin: 0 auto;
-    width: 60%;
+    width: 40%;
     margin-top: 50px;
 }
 
@@ -902,7 +902,131 @@ font-family: "Shadows Into Light", cursive;
                 margin-right: -20px;
                 
     }
+
+    #pageTitleStart h1 {
+        max-width: 800px;
+        width: 80%;
+    }
+
+    #notis {
+        max-width: 800px;
+        width: 80%;
+    }
+
+#menu img {
+    width: 20%;
 }
+
+#productList {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 40px;
+}
+
+.onePoster {
+    max-width: 600px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.oneProduct img {
+    width: 200px !important;
+    height: 300px !important;
+}
+
+#aboutText {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+#questions {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.newsArticle {
+    max-width: 800px;
+    width: 80%;
+    padding: 20px;
+}
+
+.newsArticle img {
+    display:none;
+}
+
+#contactInfo {
+    max-width: 800px;
+    width: 80%;
+}
+
+#contactForm {
+    width: 60%;
+}
+
+.newsPageArticle {
+    max-width: 800px;
+    width: 80%;
+}
+
+.newsPageArticle img{
+    max-width: 120px;
+    height: auto;
+    margin: 20px;
+}
+
+#cartPost, #checkoutPost {
+    max-width: 800px;
+    width: 80%;
+}
+
+.theProduct {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.productDescription {
+    max-width: 800px;
+    width: 80%;
+}
+
+.productInfo {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addToCart {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.theSingleNews {
+    max-width: 800px;
+    width: 90%;
+}
+
+#post {
+    max-width: 800px;
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 700px) {
+.newsPageArticle img{
+    display:none;
+}
+}
+
 
 /*Anpassningar till stora skärmar*/
 @media (min-width: 1800px) {
@@ -1035,6 +1159,12 @@ footer img {
 
 #contactInfo p {
     font-size: 120%;
+}
+
+#contactInfo a {
+    color: #452519;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 #contactForm {
@@ -1208,10 +1338,46 @@ form input[type=submit] {
     width: 900px;
 }
 
+}
+
+/*Anpassningar till små skärmar*/
+@media (max-width: 1100px) {
 
 
+#aboutDiv {
+    flex-direction: column;
+}
 
+#aboutDiv img {
+    box-shadow: 10px 10px 0px #e9d0a3;
+}
 
+#aboutImg {
+    border: none;
+    margin-bottom: 0px;
+}
 
 
 }
+
+@media (max-width: 1080px) {
+.sidebarPageContent {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.sidebarPageText {
+    max-width: 800px;
+width: 80%;
+}
+
+.sidebar {
+    max-width: 800px;
+width: 80%;
+}
+
+}
+
+
