@@ -24,8 +24,8 @@ add_theme_support('post-thumbnails');
 
 //Sätter storlek på bilder
 add_image_size('header', 2000, 900, array('center', 'center'));
-add_image_size('news-image', 200, 200, array('center', 'center'));
-add_image_size('news-image-single', 300, 300, array('center', 'center'));
+add_image_size('news-image', 200, 350, array('center', 'center'));
+add_image_size('news-image-single', 300, 450, array('center', 'center'));
 add_image_size('product-image', 300, 400, array('center', 'center'));
 add_image_size('about-image', 250, 400, array('center', 'center'));
 

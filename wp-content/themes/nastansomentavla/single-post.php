@@ -15,7 +15,7 @@ get_header(); ?>
             ?>
 
             <div class="theSingleNews">
-        <?php the_post_thumbnail('news-image-single'); ?>
+        <?php the_post_thumbnail('news-image'); ?>
         <div class="newsText">
         <p><?php the_content();?>
         </p>

@@ -13,11 +13,15 @@ get_header(); ?>
     if(have_posts()) {
         while(have_posts()) {
             the_post();
+
+            $name = get_the_author_meta('first_name');
+            $email = get_the_author_meta('email');
             ?>
 
         <div id="contactInfo">
         <h2><?php the_title(); ?></h2>
         <p><?php the_content();?> </p>
+        <p>Kontakta <?= $name ?> på: <?= $email; ?></p>
     </div>
 
 <?php

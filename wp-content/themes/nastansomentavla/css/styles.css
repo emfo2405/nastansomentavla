@@ -830,6 +830,8 @@ font-family: "Shadows Into Light", cursive;
     margin-top: 20px;
     margin-bottom: 40px;
     box-shadow: 10px 10px 0px #e9d0a3;
+    width: 300px;
+    height: auto;
 }
 
 .theSingleNews .newsText {
