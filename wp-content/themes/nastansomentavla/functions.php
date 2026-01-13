@@ -84,4 +84,33 @@ function tema_theme_support(): void {
 }
 add_action('after_setup_theme', 'tema_theme_support');
 
+//Skapa roller för sidan
+//Redaktörsroll
+function skapa_redaktor_roll(): void {
+    add_role(
+        role: 'min_redaktor',
+        display_name: 'Redaktör',
+        capabilities: array(
+            'read' => true, 
+            'edit_posts' => true,
+            'publish_posts' => true,
+            'upload_files' => true,
+            'delete_posts' => false,
+            'manage_options' => false, 
+            'create_users' => false
+        )
+        );
+}
+add_action('after_setup_theme', 'skapa_redaktor_roll');
 
+//Roll för att hantera WooCommerce
+function klona_shop_manager_roll() {
+    $role = get_role('shop_manager');
+
+    add_role(
+        'full_woocommerce',
+        'WooCommerce - full åtkomst',
+        $role -> capabilities
+    );
+}
+add_action('init', 'klona_shop_manager_roll');
