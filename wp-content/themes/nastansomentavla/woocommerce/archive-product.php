@@ -24,7 +24,7 @@ $page_id = get_the_ID();
             ?>
         <div class="onePoster">
             <div class="productListImg">
-            <a href='<?php the_permalink(); ?>'><?php the_post_thumbnail(); ?></a>
+            <a href='<?php the_permalink(); ?>'><?php the_post_thumbnail('product-image'); ?></a>
             </div>
             <div class="posterText">
             <p><?php the_title(); ?></p>

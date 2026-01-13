@@ -22,7 +22,7 @@ get_header();
 
     <div class="theProduct">
         <div class="productInfo">
-        <?php the_post_thumbnail(); ?>
+        <?php the_post_thumbnail('product-image'); ?>
         <div class="theProductText">
         <h2><?php the_title(); ?></h2>
         <h3><?php echo $product -> get_price_html(); ?></h3>

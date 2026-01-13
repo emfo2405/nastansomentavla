@@ -23,7 +23,7 @@ add_action('after_setup_theme', 'mytheme_add_woocommerce_support');
 add_theme_support('post-thumbnails');
 
 //Sätter storlek på bilder
-add_image_size('header', 3999, 2184, array('center', 'center'));
+add_image_size('header', 2000, 900, array('center', 'center'));
 add_image_size('news-image', 200, 200, array('center', 'center'));
 add_image_size('news-image-single', 300, 300, array('center', 'center'));
 add_image_size('product-image', 300, 400, array('center', 'center'));
