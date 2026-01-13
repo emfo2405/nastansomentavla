@@ -65,7 +65,10 @@
         <div id="aboutText">
             <h2><?php the_title(); ?></h2>
             <p><?php the_content(); ?></p>
+            <a href="<?php echo get_permalink(get_page_by_path('kontakt')); ?>">Kontakta mig!</a>
         </div>
+
+
     </div>
 
     <?php
@@ -101,8 +104,8 @@
 
         wp_reset_query();
         ?>
-        
         </div>
+                <a href="<?php echo get_permalink(get_page_by_path('faq')); ?>">Läs fler frågor</a>
     </div>
 
     <div id="news">

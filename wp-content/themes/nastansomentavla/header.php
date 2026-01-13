@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/styles.css">
-    <title><?php bloginfo('name')?></title>
+    <title><?php the_title(); ?> | <?php bloginfo('name')?></title>
     <link rel="icon" type="image/x-icon" href="<?= get_template_directory_uri(); ?>/images/favicon-32x32.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

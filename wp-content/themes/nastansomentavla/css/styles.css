@@ -13,6 +13,8 @@ body h1, body h2, body h3 {
 
 
 
+
+
 #menu {
     display: flex;
     align-items: center;
@@ -41,8 +43,17 @@ body h1, body h2, body h3 {
     text-decoration: none;
     padding: 10px;
     text-decoration: underline;
-    text-underline-offset: 10px;
+    text-underline-offset: 7px;
     color: #583022;
+}
+
+#menu a:hover {
+    text-underline-offset: 15px;
+}
+
+.current-menu-item a{
+    background-color: #e9d0a3;
+    border-radius: 20px;
 }
 
 #menuLinks {
@@ -72,7 +83,7 @@ body h1, body h2, body h3 {
 }
 
 #pageTitle {
-    text-align: center;
+text-align: center;
   font-size: 150%;
   color: #583022;
 }
@@ -119,10 +130,12 @@ body h1, body h2, body h3 {
 }
 
 #aboutDiv img{
-    width: 300px;
+    width: 250px;
     height: auto;
     opacity: 1;
+    margin: 0 auto;
     box-shadow: 5px 5px 0px #e9d0a3;
+
 }
 
 #aboutImg {
@@ -130,23 +143,25 @@ body h1, body h2, body h3 {
     margin: 20px;
     border-right: 2px solid #e9d0a3;
     padding-right: 50px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #aboutDiv {
     margin: 0 auto;
     margin-top: 20px;
     display: flex;
-    width: 80%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
 }
 
 #aboutText {
     text-align: left;
     margin: 50px;
     width: 100%;
-    font-family: "Shadows Into Light", cursive;
-  font-weight: 400;
-  font-style: normal;
+    max-width: 600px;
   box-shadow: 5px 5px 0px #e9d0a3;
   text-align: center;
   padding: 25px;
@@ -159,6 +174,35 @@ body h1, body h2, body h3 {
   font-style: normal;
     font-size: 150%;
     text-align: center;
+}
+
+#aboutText p {
+font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#aboutText a {
+        color: #452519;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #452519;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#aboutText a:hover {
+    background-color: #452519;
+    color: #ede6dd;
+    border: 2px solid #e9d0a3
 }
 
 .oneProduct{
@@ -175,6 +219,7 @@ body h1, body h2, body h3 {
     box-shadow: 5px 5px 0px #e9d0a3;
     display: block;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 
 .oneProduct p {
@@ -263,6 +308,10 @@ body h1, body h2, body h3 {
     text-align: center;
 }
 
+.oneQuestion h3 {
+    font-size: 160%;
+}
+
 footer {
     background-color: #e9d0a3;
     padding: 5px;
@@ -343,6 +392,8 @@ margin-bottom: 40px;
     width: 100%;
 }
 
+
+
 .newsText h3 {
               font-family: "Shadows Into Light", cursive;
   font-weight: 400;
@@ -351,7 +402,7 @@ margin-bottom: 40px;
   font-size: 160%;
 }
 
-#news a {
+#news a,  #faq a{
         color: #583022;
     text-decoration: none;
     padding: 10px;
@@ -364,7 +415,11 @@ margin-bottom: 40px;
     margin-bottom: 40px;
 }
 
-#news a:hover {
+#faq a {
+    margin-top: 20px;
+}
+
+#news a:hover, #faq a:hover{
     background-color: #583022;
     color: #ede6dd;
 }
@@ -375,11 +430,12 @@ margin-bottom: 40px;
 #contactInfo {
     background-color: #e9d0a3;
     border-radius: 20px;
-    width: 400px;
+    width: 500px;
     padding: 20px;
     margin: 20px;
     margin: 0 auto;
     margin-top: 30px;
+    line-height: 30px;
 }
 
 #contactInfo h2 {
@@ -591,6 +647,7 @@ font-family: "Shadows Into Light", cursive;
 
 .addToCart {
     margin-top: 40px;
+    text-align: center;
 }
 
 .theProduct img {
@@ -648,7 +705,7 @@ font-family: "Shadows Into Light", cursive;
 
 /*Design för enskild nyhet*/
 .theNews img {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin: 20px;
     box-shadow: 5px 5px 0px #e9d0a3;
@@ -658,6 +715,10 @@ font-family: "Shadows Into Light", cursive;
     display: flex;
     box-shadow: 5px 5px 0px #583022;
     margin: 30px;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .theNews p {
@@ -756,7 +817,32 @@ font-family: "Shadows Into Light", cursive;
     padding: 10px;
 }
 
+/*Design för sida med enskild nyhet*/
+.theSingleNews {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
 
+.theSingleNews img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    box-shadow: 10px 10px 0px #e9d0a3;
+}
+
+.theSingleNews .newsText {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+.theSingleNews a {
+    color: #452519;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
 
 
 
@@ -816,4 +902,316 @@ font-family: "Shadows Into Light", cursive;
                 margin-right: -20px;
                 
     }
+}
+
+/*Anpassningar till stora skärmar*/
+@media (min-width: 1800px) {
+/*Startsida*/
+
+#menu a{
+    font-size: 160%;
+}
+
+#menu img {
+    width: 250px;
+}
+
+#notis {
+    width: 700px;
+    font-size: 140%;
+}
+
+#pageTitleStart {
+    font-size: 150%;
+}
+
+#productsDiv h2 {
+    font-size: 270% !important;
+}
+
+.oneProduct img{
+    width: 350px !important;
+    height: 480px !important;
+    margin: 30px;
+}
+
+.oneProduct p {
+    font-size: 140%;
+}
+
+#productsDiv a {
+    font-size: 140%;
+    width: 240px;
+}
+
+#aboutDiv img {
+    width: 350px;
+}
+
+#aboutText {
+    max-width: 800px;
+}
+
+#aboutText p {
+    font-size: 120%;
+}
+
+#aboutText h2 {
+    font-size: 220%;
+}
+
+#aboutText a {
+    font-size: 120%;
+}
+
+#faq {
+    max-width: 1400px;
+}
+
+#faq h2 {
+    font-size: 220%;
+}
+
+#faq h3 {
+    font-size: 200%;
+}
+
+#faq p {
+    font-size: 120%;
+}
+
+#faq a {
+    font-size: 120%;
+}
+
+.oneQuestion {
+    margin: 20px;
+}
+
+.newsArticle {
+    width: 900px;
+}
+
+#news h2 {
+    font-size: 220%;
+}
+
+.newsArticle h3 {
+    font-size: 200%;
+}
+
+.newsArticle p {
+    font-size: 120%;
+}
+
+#news img {
+    width: 200px;
+}
+
+#news a {
+    font-size: 120%;
+}
+
+footer a {
+    font-size: 130%;
+}
+
+footer img {
+    width: 150px;
+}
+
+/*Sida med kontaktinformation*/
+#pageTitle {
+    font-size: 200%;
+}
+
+#contactInfo {
+    width: 650px;
+}
+
+#contactInfo h2 {
+    font-size: 220%;
+}
+
+#contactInfo p {
+    font-size: 120%;
+}
+
+#contactForm {
+    width: 35%;
+}
+
+#contactForm h2 {
+    font-size: 220%;
+}
+
+#contactForm label {
+    font-size: 120%;
+}
+
+form input[type=submit] {
+    font-size: 120%;
+}
+
+/*Nyhetssidan*/
+
+.newsPageArticle {
+    width: 900px;
+}
+
+#newsPage h2 {
+    font-size: 220%;
+}
+
+.newsPageArticle h3 {
+    font-size: 200%;
+}
+
+.newsPageArticle p {
+    font-size: 120%;
+}
+
+.newsPageArticle img {
+    width: 200px;
+}
+
+#newsPage a {
+    font-size: 120%;
+}
+
+#productList {
+    max-width: 1000px;
+}
+
+.productListImg img {
+    width: 300px !important;
+    height: 400px !important;
+}
+
+.posterText p {
+    font-size: 120%;
+}
+
+#productList {
+    margin-bottom: 40px;
+}
+
+#cartPost h2 {
+    font-size: 220%;
+    line-height: 50px;
+}
+
+#cartPost, #checkoutPost {
+    font-size: 120%;
+}
+
+#cartPost, #checkoutPost a {
+    font-size: 120%;
+}
+
+#cartPost, #checkoutPost input {
+    font-size: 90%;
+}
+
+#cartPost, #checkoutPost span {
+    font-size: 115%;
+}
+
+#cartPost, #checkoutPost img {
+    width: 100px;
+}
+
+#cartPost {
+    width: 750px;
+}
+
+#checkoutPost {
+    width: 900px;
+}
+
+#checkoutPost button {
+    font-size: 120%;
+}
+
+#checkoutPost {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#checkoutPost h2 {
+    font-size: 150%;
+}
+
+.theSingleNews .newsText {
+    width: 80%;
+
+}
+
+.theSingleNews p {
+    font-size: 140%;
+}
+
+.theSingleNews {
+    width: 900px;
+}
+
+.theSingleNews img {
+    width: 300px;
+    height: auto;
+}
+
+.theProductText h2 {
+    font-size: 220%;
+}
+
+.theProductText p {
+    font-size: 120%;
+}
+
+.productInfo img {
+    width: 300px;
+    height: auto;
+}
+
+.productDescription {
+    width: 700px;
+    font-size: 120%;
+}
+
+.addToCart {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 40px;
+}
+
+.sidebarPageText h2 {
+    font-size: 220%;
+}
+
+.sidebarPageText p {
+    font-size: 120%;
+}
+
+.sidebarPageText {
+    width: 800px;
+}
+
+#post h2 {
+    font-size: 220%;
+}
+
+#post p {
+    font-size: 120%;
+}
+
+#post {
+    width: 900px;
+}
+
+
+
+
+
+
+
 }
