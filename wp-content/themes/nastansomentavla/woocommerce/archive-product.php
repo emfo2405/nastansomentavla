@@ -11,7 +11,7 @@ $page_id = get_the_ID();
 </div>
 
 <div id="productsPage">
-    <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'subtitle', true)); ?></h2>
+    
 
 
 <div id="productList">

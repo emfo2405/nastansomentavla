@@ -87,7 +87,7 @@
     <div id="faq">
         <h2><?php echo esc_html(get_post_meta(get_the_ID(), 'faqHeading', true)); ?></h2>
     <div id="questions">
-        <?php query_posts('category_name=faq');
+        <?php query_posts('category_name=faq&posts_per_page=4');
         if(have_posts()) {
             while (have_posts()) {
                 the_post();
