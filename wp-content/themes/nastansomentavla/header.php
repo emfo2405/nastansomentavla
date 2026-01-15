@@ -1,6 +1,8 @@
+<!-- HTML-sida startas-->
 <!DOCTYPE html>
 <html lang="sv">
 
+<!--Grundinställningar för sidan sätts, typsnitt läses in, favicon läses in och titel sätts -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,24 +16,24 @@
 <?php wp_head(); ?>
 </head>
 
+<!-- Body-innehållet skapas -->
 <body>
 
-
+<!--Header-bild läses in -->
     <div id="headerDiv">
                 <img src="<?= get_template_directory_uri(); ?>/images/Fabriksgatan-logotyp2.png" alt="Målning av ett hus på fabriksgatan">
-
-        
     <nav id="menu">
         
-
 <div id="smallMenu">
-
+<!-- Logotyp läses in-->
         <div><a href="<?= get_home_url(); ?>"><img src="<?= get_template_directory_uri(); ?>/images/logotypMedText.png" alt="Målad bild på en makrill"></a></div>
 
                 <div id="mobileMenu">
+<!-- Ikon för mobilsymbolen läses in-->
             <button id="menuButton">Meny<span id="menuIcon" class="material-symbols-outlined">menu</span></button>
         </div>
 </div>
+<!-- Menylänkar läses in-->
         <div id="menuLinks">
 <?php wp_nav_menu(array('theme_location' => 'main-nav')); ?>
         </div>
