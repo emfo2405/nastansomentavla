@@ -237,6 +237,7 @@ font-family: "Poppins", sans-serif;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 #productsDiv {
@@ -770,7 +771,7 @@ font-family: "Shadows Into Light", cursive;
 }
 
 #checkoutPost h2, #checkoutPost h3 {
-          font-family: "Poppins", sans-serif;
+font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

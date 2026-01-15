@@ -3,11 +3,10 @@
 
 get_header(); 
 
-$page_id = get_the_ID();
 ?>
 
 <div id="pageTitle">
-    <h1><?php echo get_the_title($page_id); ?></h1>
+    <h1><?php echo get_the_title(wc_get_page_id('shop')); ?></h1>
 </div>
 
 <div id="productsPage">
